@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 26 18:54:49 2020
+
+@author: anurag
+"""
+# Getting inputs from user for the numbers to be checked
+number1 = input("Enter first number:")
+number2 = input("Enter second number:")
+number3 = input("Enter third number:")
+
+# Checking if number1 is less than number2 and number3
+# number1 is less than number2
+if(number1<number2):
+# number1 is less than number3 too, then 1 is smallest
+    if(number1<number3):
+        print(number1,"is the smallest number")
+# num3 < num1 and as num1 is less than num2, num3 will be the smallest
+    else:
+        print(number3,"is the smallest number")
+# num2 is less than num1 and if num2<num3 too, num 2 will be the smallest
+elif(number2<number3):
+    print(number2,"is the smallest number")
+# num2 < num1 AND num3 < num2 then num3 is the smallest
+else:
+    print(number3,"is the smallest number")

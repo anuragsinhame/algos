@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 26 20:22:15 2020
+
+@author: anurag
+"""
+
+# getting input from user to check if number is palindrome
+# number = input("Enter number to check if it is palindrome:")
+# giving constant for test purposes
+number = 13431
+
+# initializing the variables
+reverse = 0
+temp = number
+
+while(temp!=0):
+# getting remainder
+    remainder = int(temp)%10
+# calculating reverse
+    reverse = reverse*10 + remainder
+# getting quotient and it will also be the terminating condition for while
+    temp = temp//10
+    
+# checking if original number and reverse number are same
+if(number==reverse):
+    print(number,"is a palindrome")
+else:
+    print(number,"is not a palindrome number")

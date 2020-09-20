@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Aug 26 20:49:24 2020
+
+@author: anurag
+"""
+
+# Initializing the variables
+number = 3711
+cubic_sum=0
+
+temp_num = number
+
+while(temp_num!=0):
+    remainder = temp_num%10
+    cubic_sum+=remainder**3
+    temp_num//=10
+
+if(cubic_sum == number):
+    print(number,"is an Armstrong number")
+else:
+    print(number,"is not an Armstrong number")
